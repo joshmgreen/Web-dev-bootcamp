@@ -1,0 +1,8 @@
+<div>
+  <h2>Blog Posts</h2>
+  <ul>
+    <% locals.blogs.forEach(function(blog) { %>
+    <li><a href="/edit/<%= blog.id %>"><%= blog.title %></a></li>
+    <% }); %>
+  </ul>
+</div>
